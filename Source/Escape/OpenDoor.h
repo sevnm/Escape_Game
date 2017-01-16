@@ -33,9 +33,9 @@ private:
 		float DoorCloseDelay = 1.8f;
 	
 	UPROPERTY(EditAnywhere)
-		ATriggerVolume* PressurePlate;
+		ATriggerVolume* PressurePlate = nullptr;
 	UPROPERTY(EditAnywhere)
-		AActor* ActorThatOpens;
+		AActor* ActorThatOpens = nullptr;
 
 	UPROPERTY(EditAnywhere)
 		float TriggerMass = 100.f;
@@ -43,5 +43,5 @@ private:
 	void PollPlate();
 	float MassOnPlate();
 	//float TotalMass = 0;
-	AActor* Owner;
+	AActor* Owner = nullptr;
 };
